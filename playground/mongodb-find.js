@@ -27,7 +27,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
     // });
 
     db.collection('Users').find({
-        name: 'Radu' 
+        name: 'Radu'
     }).toArray().then((docs) => {
         console.log('Todos with name Radu');
         console.log(JSON.stringify(docs, undefined, 2));
